@@ -21,8 +21,9 @@ In file asg.tf we create:
 In file alb.tf we create Application Load Balancer with target groups, security group and listener.
 
 
-## Note
-If you decide not to use the wrapper file you will need to execute the following commands:
-1. terraform init
-2. terraform plan (optional)
-3. terraform apply -auto-approve
+## Notes
+1. If you decide not to use the wrapper file you will need to execute the following commands:
+    * terraform init
+    * terraform plan (optional)
+    * terraform apply -auto-approve
+2. If dns record of the ALB failed to appear in the terminal, copy the record from your aws account.
